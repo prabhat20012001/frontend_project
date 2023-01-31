@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Verification Page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+  <style>
+.logo-container {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+}
+
+
+.items-center {
+  @apply items-center;
+}
+
+.justify-center {
+  @apply justify-center;
+}
+
+.p-4 {
+  @apply p-4;
+}
+
+.flex {
+  @apply flex;
+}
+
+.text-lg {
+  @apply text-lg;
+}
+
+.w-8 {
+  @apply w-8;
+}
+
+.h-8 {
+  @apply h-8;
+}
+
+.ml-2 {
+  @apply ml-2;
+}
+
+.container {
+    max-width: 800px;
+  }
+  .solution-section {
+  padding: 1rem;
+}
+
+.solution-section h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.solution-section p {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+.icon-text {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+/* img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+} */
+
+
+  </style>
+ 
+</head>
+<body>
+
+  <nav class="flex items-center justify-between px-4 py-3 bg-gray-100">
+    <div class="flex items-center">
+      <div class="logo-container">
+        <img  src="iTerve.svg" alt="Company Logo">
+      </div>
+    </div>
+   
+    <div class="flex items-center">
+      <ul class="flex text-base text-dark">
+        <li><a class="mx-3 text-xl" href="#">Home</a></li>
+        <li><a class="mx-3 text-xl" href="#">About</a></li>
+        <li><a class="mx-3 text-xl" href="#">Services</a></li>
+      </ul>
+      <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded-full shadow-lg hover:shadow-none hover:bg-green-500"id="sign-in-button">
+        Sign In
+      </button>
+    </div>
+  </nav>
+  <form class="bg-light p-6 rounded-lg shadow-xl" id="search-form">
+   
+      <div class="flex items-center py-4">
+        <input type="text" placeholder="Search..." class="w-64 px-4 py-2 text-gray-700 bg-gray-200 rounded-full focus:outline-none focus:shadow-outline" id="search-input">
+        <button type="submit" class="bg-blue-500 text-white font-bold py-2 px-4 rounded-full shadow-lg hover:shadow-none hover:bg-green-500">Go</button>
+      </div>
+    </div>
+  </form>
+  
+  <div id="form-container" class="mt-10 mx-10 hidden">
+    <p class="text-base text-center">We will send a one-time SMS message to your phone number. Please enter your email ID and phone number:</p>
+    <form class="mt-4">
+      <div class="flex items-center mb-4">
+        <label for="email" class="mr-2">Email ID:</label>
+        <input type="email" id="email" name="email" class="bg-gray-200 px-3 py-2 rounded-lg">
+      </div>
+      <div class="flex items-center mb-4">
+        <label for="phone" class="mr-2">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" class="bg-gray-200 px-3 py-2 rounded-lg">
+      </div>
+      <button type="submit" class="bg-blue-500 text-white font-bold py-2 px-4 rounded-full shadow-lg hover:shadow-none hover:bg-green-500">Next</button>
+   
+    </form>
+  </div>
+  <div class="p-6 bg-white rounded-lg shadow-md">
+    <h2 class="text-2xl font-medium mb-4">Vital Check: iTERVE's</h2>
+    <p class="mb-2">Our AI scientists have put in the efforts to extract PPG waves and RGB using laptop/desktop webcams and derive values of key vitals such as blood pressure, heart rate, HRV, oxygen saturation, respiration rate, pulse respiratory quotient (PRQ), sympathetic stress, parasympathetic activity, and hemoglobin with high accuracy. As of now, we have tested the efficacy of heart rate (as shown in image) and oxygen saturation (SpO2) with accuracy of 99%.</p>
+    <p class="mb-2">These are breakthrough results and will help in connecting rural/remote areas with self-care health support and advanced healthcare connecting primary healthcare/doctor/consultant based on self-care data wherever mobile network works.</p>
+  </div>
+
+  <div class="container mx-auto p-10">
+    <h1 class="text-4xl font-medium text-center text-gray-800">iTERVE's Vital Check Walk Through</h1>
+    <ul class="list-disc ml-10">
+      <li class="py-2 text-xl">Blood Pressure</li>
+      <li class="py-2 text-xl">Heart Rate</li>
+      <li class="py-2 text-xl">HRV</li>
+      <li class="py-2 text-xl">Oxygen Saturation</li>
+      <li class="py-2 text-xl">Respiration Rate</li>
+      <li class="py-2 text-xl">Pulse Respiratory Quotient (PRQ)</li>
+      <li class="py-2 text-xl">Sympathetic Stress</li>
+      <li class="py-2 text-xl">Parasympathetic Activity</li>
+      <li class="py-2 text-xl">Haemoglobin</li>
+    </ul>
+    <div class="text-3xl font-bold text-gray-800">iMR: Intelligent Medical Record (Your Health Dashboard)</div>
+<div class="mt-4 text-xl font-medium text-gray-800">About iMR</div>
+<div class="mt-4 text-base text-gray-700">In today's scenario, doctors often struggle when comparing medical test reports manually. This method leads to numerous errors, as the human brain can only remember a limited amount of information. To solve this issue, we present the solution of an Intelligent Medical Record. This will allow doctors to easily view all previous medical test reports in a visually appealing and graphical manner. </div>
+<div class="text-xl font-bold text-center my-8">How iMR works</div>
+<div class="text-base text-gray-700 text-center my-4">
+iMR converts all uploaded diagnostic test reports, prescriptions, and other medical records into a digitally readable format from PDF or image format, as uploaded by the user. The next step is to put all historical test data in a tabular format, including the vital tests done by iTERVE, and display it on the dashboard as a table and graphical form for easy understanding.
+</div>
+<div class="text-base text-gray-700 text-center my-4">
+Our AI model detects any abnormal historical test data and highlights it, as well as linking it to the doctor's prescription/diagnostic report if any. This provides clear and accurate information to the physician/consultant, enabling them to diagnose more accurately and provide better treatment to the patient.
+</div><hr>
+
+  </div>
+  <div class="text-center font-medium text-2xl">Personalized Nutrition</div>
+<div class="text-center text-lg font-medium mt-2">YOUR PERSONALISED NUTRITIOUS REQUIREMENT AND SUGGESTED FOOD OPTIONS POWERED BY AI</div>
+<div class="text-center font-medium text-xl mt-4">About Personalized Nutrition</div>
+<p class="text-center mt-2">Proper nutrition fuels the body for optimal performance. Whether you want to bulk up, slim down, reverse disease, control symptoms, or optimize your health and longevity, iTERVE Personalized Nutrition and Meal Planning can help. The app pinpoints areas of needed improvement for your chosen goals and offers macro and micronutrient guidance for creating a balanced, nutrient-dense diet based on the foods you like to eat.</p>
+<p class="text-center mt-2">What sets iTERVE apart from others is its amazing meal planning and personalized nutrition guidance. It empowers you to make nutrition work for you better. </p> <hr>
+
+
+
+
+
+
+  <div class="bg-white p-8 rounded shadow">
+    <h2 class="text-xl font-bold mb-4">Use Case: Insurance</h2>
+    <div class="mb-4">
+      <h3 class="text-lg font-medium mb-2">Underwriting</h3>
+      <p class="mb-2">Turn any smartphone, tablet, or laptop into a health-evaluation instrument. Reduce operating expenses by gathering health data remotely. Accelerate and improve STP (straight-through processing). Real-time data helps to improve risk assessment. Provide a personalised and one-of-a-kind client experience.</p>
+    </div>
+    <div class="mb-4">
+      <h3 class="text-lg font-medium mb-2">Dynamic Underwriting</h3>
+      <p class="mb-2">Incorporate data into your yearly insurer check-in to create competitive packages that match the demands of your clients. Allow clients' objective, real-time health and wellness data to guide your decisions. Lower the likelihood of migration to other service provider. Utilize digitisation to enhance the client experience. Engage millennials in conversation</p>
+    </div>
+    <div class="mb-4">
+      <h3 class="text-lg font-medium mb-2">Risk Management</h3>
+      <p class="mb-2">Using real-time health data, you can speed up onboarding and improve straight-through processing. Using the iTERVE Health Analysis, you can quickly identify high-risk clients. With objective, client-provided, real-time health data, you can better inform underwriting and risk assessment. Extend straight-through processing to more applicants and provide a unified digital experience. Increase the use of questionnaires while decreasing the requirement for medical exams.</p>
+    </div>
+    <div class="mb-4">
+      <h3 class="text-lg font-medium mb-2">Claims Processing</h3>
+      <p class="mb-2">Meet your clients needs for user-friendly claims processing using real-time health data. Accelerate claims and enable straight-through processing. Reduce fraud and validate claims with real-time health data. Follow up on claims using historical health data and trends</p>
+    </div>
+  </div>
+  <div class="px-6 py-4 bg-white shadow">
+    <h2 class="text-xl font-bold">Use Case: Rural Health Assist</h2>
+    <h3 class="text-lg font-bold mb-2">Challenges:</h3>
+    <p class="mb-2">31% of rural Indians have to travel over 30km to get to these hospitals. Even when they do arrive, some do not even have doctors present or drugs available to administer, leaving it to any relatives of patients to buy drugs while the hospital calls a doctor, and even if all of this happens, the patient may die before the doctor even arrives. Most of the healthcare facilities are available at taluka and district level and in rural area they do basic home remedies initially and move there only when things get sever and sometimes it’s hard to recover due to delay in receiving treatment.</p>
+  </div>
+
+
+
+<div class="solution-section">
+  <h2 class="text-xl font-bold mb-4">iTERVE as Solution:</h2>
+  <div class="flex flex-col mb-4">
+    <h3 class="text-lg font-bold mb-2">Connecting All with Basic Healthcare:</h3>
+    <p class="mb-2">Every citizen Ayushman Bharat ID card can register and get self health check periodically or whenever they feel uneasy. If vitals are not in normal range, it can be connected to doctor/consultant for telehealth advise as basic/elementary care, followed by reaching healthcare facility based on the health requirement.</p>
+  </div>
+  <div class="flex flex-col mb-4">
+    <h3 class="text-lg font-bold mb-2">Referral Management:</h3>
+    <p class="mb-2">iMR (Intelligent Medical Record) keeps all health record safe and allows to share for secondary healthcare need or referral to next level without carrying any physical documents. It also allows to check availability at respective healthcare organization where being referred, as well as can receive prior approval on referral.</p>
+  </div>
+  <div class="flex flex-col mb-4">
+    <h3 class="text-lg font-bold mb-2">Individual Wellness:</h3>
+    <p class="mb-2">It can help people take control of their personal healthcare with regular and real-time insights of their vital signs, which will help in maintaining a healthy lifestyle and also take preventive steps or precautions in day-to-day activities.</p>
+  </div>
+  <div class="flex flex-col mb-4">
+    <h3 class="text-lg font-bold mb-2">Corporate Employee Wellness:</h3>
+    <p class="mb-2">With the use of iTERVE solution, corporate/business houses can monitor and maintain good stress levels of their employees, which can improve their wellbeing and enhance productivity without friction of their CSR spending.</p>
+  </div>
+  <div class="flex flex-col">
+    <h3 class="text-lg font-bold mb-2">Elderly Care:</h3>
+    <p>iTERVE dashboard provides elderly people with an easy-to-use health monitoring dashboard for their health status at their fingertips, as well as access for their caregiver and family members to monitor from a remote location. It will eventually protect the elderly with this innovative AI-based intelligent solution and empower them to live independently, for longer.</p>
+  </div>
+</div>
+
+<div class="container mx-auto p-4">
+  <h1 class="text-2xl font-bold mb-4">About iTERVE</h1>
+  <p class="text-lg mb-4">AIVIOT AI team has worked intensively in the development of this innovative AI solution and referred over 1000 healthcare research papers to develop a mature first AI model for training the extracted PPG waves and RGB data for accurate outcome of key vitals.</p>
+  <p class="text-lg mb-4">Second AI model been built and trained to convert health records into a digitally readable format and prepare an intelligent medical record view for easy understanding of historical health along with highlighting any past abnormal conditions and connecting it with the respective diagnosis and prescription, if any.</p>
+  <p class="text-lg">Third AI model provides accurate body needs for macro and micro nutrients based on your profile, which includes age, weight, physical activities, etc. and vitals along with historical health data attached to your profile.</p>
+</div>
+<div class="p-6 bg-white rounded-lg shadow-md">
+  <h2 class="text-2xl font-medium mb-4">iTERVE's Key Solution</h2>
+  <div class="mb-6">
+    <h3 class="text-xl font-medium mb-2">AI based vital check</h3>
+    <p class="text-base font-light">Our AI-based vital check accurately monitors your vital signs to give you real-time insights into your health status.</p>
+  </div>
+  <div class="mb-6">
+    <h3 class="text-xl font-medium mb-2">iMR (Intelligent Medical Record)</h3>
+    <p class="text-base font-light">Our iMR provides you with a personal health dashboard where you can access all your medical records in one place.</p>
+  </div>
+  <div class="mb-6">
+    <h3 class="text-xl font-medium mb-2">Your personalised nutritious requirement</h3>
+    <p class="text-base font-light">Our AI-powered solution calculates your personalised nutritious requirement and suggests food options to meet your unique needs.</p>
+  </div>
+</div>
+
+
+  <div id="verification-container" class="mt-10 mx-10 hidden d-flex flex-column justify-content-center align-items-center">
+    <p class="text-base text-center">Submit the 4 digit code you received on provided number and email:</p>
+    <form class="mt-4">
+      <div class="flex items-center mb-4">
+        <label for="otp" class="mr-4"></label>
+        <input type="text" id="otp" name="otp" class="bg-gray-200 px-3 py-2 rounded-lg"placeholder="Enter OTP">
+      </div>
+      <div >
+        <button type="submit"class="bg-blue-500 text-white font-bold py-2 px-4 rounded-full shadow-lg hover:shadow-none hover:bg-green-500"id="verify-button">Verify</button>
+      </div>   
+    </form>
+    <p class="text-center mt-2">
+      <a href="#" class="underline">Didn't receive an OTP? Resend</a>
+    </p>
+</div>
+
+<div id="create-account-container" class="mt-10 mx-10 hidden">
+  <form class="mt-4">
+    <div class="flex items-center mb-4">
+      <label for="user-image" class="mr-2">Profile Picture:</label>
+      <input type="file" id="user-image" name="user-image" class="bg-gray-200 px-3 py-2 rounded-lg">
+    </div>
+    <div class="flex items-center mb-4">
+      <label for="user-name" class="mr-2">Name:</label>
+      <input type="text" id="user-name" name="user-name" class="bg-gray-200 px-3 py-2 rounded-lg">
+    </div>
+    <div class="flex items-center mb-4">
+      <label for="user-phone" class="mr-2">Mobile Number:</label>
+      <input type="tel" id="user-phone" name="user-phone" class="bg-gray-200 px-3 py-2 rounded-lg">
+    </div>
+    <div id="self-test-imr-lifestyle-diary">
+      <div class="icon-text">
+        <img src="AIVOT LOGO.png" alt="Self Test Icon" style="width: 80px; height: 80px; display: inline-block;">
+        <p>Self Test</p>
+      </div>
+      <div class="icon-text">
+        <img src="AIVOT LOGO.png" alt="iMR Icon" style="width: 80px; height: 80px; display: inline-block;">
+        <p>iMR</p>
+      </div>
+      <div class="icon-text">
+        <img src="AIVOT LOGO.png" alt="LifeStyle Diary Icon" style="width: 80px; height: 80px; display: inline-block;">
+        <p>LifeStyle Diary</p>
+      </div>
+    </div>
+    <div class="flex items-center mb-4">
+      <label for="weight" class="mr-2">Weight:</label>
+      <input type="number" id="weight" name="weight" class="bg-gray-200 px-3 py-2 rounded-lg">
+    </div>
+    <div class="flex items-center mb-4">
+      <label for="height" class="mr-2">Height:</label>
+      <input type="number" id="height" name="height" class="bg-gray-200 px-3 py-2 rounded-lg">
+    </div>
+    <div class="flex items-center mb-4">
+      <label for="age" class="mr-2">Age:</label>
+      <input type="number" id="age" name="age" class="bg-gray-200 px-3 py-2 rounded-lg">
+    </div>
+    <div class="flex items-center mb-4">
+      <label for="sex" class="mr-2">Sex:</label>
+      <select id="sex" name="sex" class="bg-gray-200 px-3 py-2 rounded-lg">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </div>
+    <div class="flex items-center mb-4">
+      <label for="sport-exercise" class="mr-2">Sport/Exercise:</label>
+      <input type="text" id="sport-exercise" name="sport-exercise" class="bg-gray-200 px-3 py-2 rounded-lg">
+    </div>
+    <button type="submit" class="bg-blue-500 text-white font-bold py-2 px-4 rounded-full shadow-lg hover:shadow-none hover:bg-green-500">Create</button>
+  </form>
+</div>
+
+<div class="flex items-center justify-center p-4 bg-gray-100 text-dark">
+  <div class="text-lg">Powered by</div>
+  <div class="logo-container">
+    <img src="AIVOT LOGO.png" />
+  </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#sign-in-button").click(function() {
+          $("#form-container").removeClass("hidden");
+        });
+        $("form").submit(function(event) {
+          event.preventDefault();
+          $("#form-container").addClass("hidden");
+          $("#verification-container").removeClass("hidden");
+        });
+      });
+      $(document).ready(function() {
+    $("#verify-button").click(function() {
+      $("#create-account-container").removeClass("hidden");
+    });
+  });
+  $(document).ready(function() {
+  $('#search-form').submit(function(event) {
+    event.preventDefault();
+    var searchQuery = $('#search-input').val();
+    // Add code here to process the search query
+    console.log(searchQuery);
+  });
+});
+    </script>
+    </body>
+</html>
