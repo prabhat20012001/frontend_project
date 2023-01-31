@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="flex items-center justify-between px-4 py-3 bg-gray-100">
+        <div class="flex items-center">
+          <div class="logo-container">
+            <img  src="iTerve.svg" alt="Company Logo">
+          </div>
+        </div>
+        <div class="flex items-center">
+            <ul class="flex text-base text-dark">
+              <li><a class="mx-3 text-xl" href="#">Home</a></li>
+              <li><a class="mx-3 text-xl" href="#">About</a></li>
+              <li><a class="mx-3 text-xl" href="#">Services</a></li>
+            </ul>
+            <form class="flex items-center">
+              <input type="text" class="border border-gray-400 p-2 rounded-full" placeholder="Search...">
+              <button class="ml-2 p-2 bg-blue-500 text-white font-bold rounded-full shadow-lg hover:shadow-none hover:bg-green-500">Search</button>
+            </form>
+            <div class="ml-4 relative">
+              <a href="#">
+                <span class="absolute right-0 top-0 h-2 w-2 rounded-full bg-red-500"></span>
+                <svg class="h-6 w-6 fill-current text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm1-9h2a1 1 0 0 1 0 2h-2v2a1 1 0 0 1-2 0v-2H9a1 1 0 0 1 0-2h2V9a1 1 0 0 1 2 0v2z"/>
+                </svg>
+              </a>
+            </div>
+            <button class="ml-4 bg-blue-500 text-white font-bold py-2 px-4 rounded-full shadow-lg hover:shadow-none hover:bg-green-500" id="sign-in-button">
+              Sign In
+            </button>
+          </div>
+        </nav>
+
+
+
+    
+</body>
+</html>
